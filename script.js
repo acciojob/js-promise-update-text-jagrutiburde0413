@@ -4,7 +4,5 @@ var promise=new Promise(function(reslove){
 	},1000)
 })
 
-function isValid(){
-	return true;
-}
+
 promise.then(data).catch(err);
