@@ -1,13 +1,10 @@
 var promise=new Promise(function(reslove){
 	setTimeOut(function(){
-		if(isValid()){
-			resolve("correct")
-		}else{
-			reject("invalid User")
-		}
+		reslove("data")
 	},1000)
 })
 
 function isValid(){
 	return true;
 }
+promise.then(data).catch(err);
