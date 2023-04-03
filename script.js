@@ -1,8 +1,11 @@
-var promise=new Promise(function(reslove){
-	setTimeOut(function(){
-		reslove("data")
-	},1000)
+function syaHello(){
+	return new Promise((resolve)=>{
+	setTimeout(()=>{
+		resolve("Hello, world!");
+	},1000)	
+	})
+}
+const output=document.getElementById("output");
+syaHello().then((result)=>{
+	output.textContent=result;
 })
-
-
-promise.then(data).catch(err);
